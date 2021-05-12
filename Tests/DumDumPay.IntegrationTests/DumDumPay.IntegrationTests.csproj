@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.2.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.9.4" />
+    <PackageReference Include="MSTest.TestAdapter" Version="2.2.3" />
+    <PackageReference Include="MSTest.TestFramework" Version="2.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\DumDumPay.ApiClient.Interfaces\DumDumPay.ApiClient.Interfaces.csproj" />
+    <ProjectReference Include="..\..\DumDumPay.ApiClient\DumDumPay.ApiClient.csproj" />
+    <ProjectReference Include="..\..\DumDumPay.Interfaces\DumDumPay.Interfaces.csproj" />
+    <ProjectReference Include="..\..\DumDumPay.Processing\DumDumPay.Processing.csproj" />
+  </ItemGroup>
+
+</Project>

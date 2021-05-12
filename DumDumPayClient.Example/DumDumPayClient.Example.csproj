@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>    
+  </PropertyGroup>
+
+  <ItemGroup>
+    
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Primitives" Version="2.2.0" />
+    
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" />
+    <PackageReference Include="Serilog.AspNetCore" Version="3.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DumDumPay.ApiClient.Interfaces\DumDumPay.ApiClient.Interfaces.csproj" />
+    <ProjectReference Include="..\DumDumPay.ApiClient\DumDumPay.ApiClient.csproj" />
+    <ProjectReference Include="..\DumDumPay.Interfaces\DumDumPay.Interfaces.csproj" />
+    <ProjectReference Include="..\DumDumPay.Processing\DumDumPay.Processing.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Pages\Order\Index.cshtml" />
+    <_ContentIncludedByDefault Remove="Pages\Payment\CreatePayment.cshtml" />
+    <_ContentIncludedByDefault Remove="Pages\Payment\Index.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Pages\Payment\CreatePayment.cshtml" />
+    <UpToDateCheckInput Remove="Pages\Payment\Index.cshtml" />
+  </ItemGroup>
+
+</Project>

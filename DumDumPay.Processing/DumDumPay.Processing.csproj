@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <RootNamespace>BridgerPay.DumDumPay</RootNamespace>
+    <AssemblyName>DumDumPay.Processing</AssemblyName>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+
+    <ProjectReference Include="..\DumDumPay.ApiClient\DumDumPay.ApiClient.csproj" />
+
+    <ProjectReference Include="..\DumDumPay.Interfaces\DumDumPay.Interfaces.csproj" />
+  </ItemGroup>
+
+</Project>

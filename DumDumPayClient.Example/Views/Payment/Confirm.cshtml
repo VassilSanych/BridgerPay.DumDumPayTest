@@ -1,0 +1,16 @@
+﻿@model PaymentConfirmedModel
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+<h2>Payment confirmation</h2>
+TransactionId: @Model.TransactionId<br/>
+Status: @Model.Status
+@if (@ViewBag.Error != null)
+{
+    <div class="alert alert-danger" role="alert">
+        @ViewBag.Error
+    </div>
+}

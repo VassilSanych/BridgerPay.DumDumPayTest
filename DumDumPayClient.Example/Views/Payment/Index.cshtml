@@ -1,0 +1,50 @@
+﻿@model CreatePaymentModel
+
+@{
+    ViewBag.Title = "Start Payment";
+    Layout = "_Layout";
+}
+
+<h2>Submit details to start payment process</h2>
+
+<form method="post">
+    <div class="form-group">
+        <label>Amount:</label>
+        @Html.TextBox("amount", @Model.Amount, new {@class = "form-control"})
+    </div>
+    <div class="form-group">
+        <label>Currency:</label>
+        @Html.TextBox("currency", @Model.Currency, new {@class = "form-control"})
+    </div>
+    <div class="form-group">
+        <label>Country:</label>
+        @Html.TextBox("country", @Model.Country, new {@class = "form-control"})
+    </div>
+    <div class="form-group">
+        <label>Card Number:</label>
+        @Html.TextBox("cardNumber", @Model.CardNumber, new {@class = "form-control"})
+    </div>
+    <div class="form-group">
+        <label>Card Hoder:</label>
+        @Html.TextBox("cardHolder", @Model.CardHolder, new {@class = "form-control"})
+    </div>
+    <div class="form-group">
+        <label>Card Expiry Date:</label>
+        @Html.TextBox("cardExpiryDate", @Model.CardExpiryDate, new {@class = "form-control"})
+    </div>
+    <div class="form-group">
+        <label>CVV:</label>
+        @Html.TextBox("cvv", @Model.Cvv, new {@class = "form-control"})
+    </div>
+    <div class="form-group">
+        <input type="submit" value="submit" class="btn btn-primary">
+    </div>
+
+</form>
+
+@if (@ViewBag.Error != null)
+{
+    <div class="alert alert-danger" role="alert">
+        @ViewBag.Error
+    </div>
+}
