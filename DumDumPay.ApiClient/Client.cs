@@ -7,6 +7,9 @@ using Newtonsoft.Json;
 
 namespace BridgerPay.DumDumPay.ApiClient
 {
+	/// <summary>
+	///  DumDumPay fake payment Api client
+	/// </summary>
 	public class Client : IApiClient
 	{
         private readonly ILogger<Client> _logger;
@@ -23,6 +26,12 @@ namespace BridgerPay.DumDumPay.ApiClient
 			_settings = settings.Value;
         }
 
+		
+		/// <summary>
+		///  Payment creation request
+		/// </summary>
+		/// <param name="apiRequest"></param>
+		/// <returns></returns>
         public async Task<CreatePaymentApiResponse> CreatePaymentAsync(
 			CreatePaymentApiRequest apiRequest)
         {
@@ -38,6 +47,12 @@ namespace BridgerPay.DumDumPay.ApiClient
             return result;
         }
 
+		
+		/// <summary>
+		///  Payment confirmation request
+		/// </summary>
+		/// <param name="apiRequest"></param>
+		/// <returns></returns>
         public async Task<ConfirmPaymentApiResponse> ConfirmPaymentAsync(
             ConfirmPaymentApiRequest apiRequest)
         {

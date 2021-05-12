@@ -9,6 +9,9 @@ using Newtonsoft.Json;
 
 namespace DumDumPayClient.Example.Controllers
 {
+	/// <summary>
+	///  Example workflow controller
+	/// </summary>
     public class PaymentController : Controller
     {
         private readonly IProcessing _paymentClient;

@@ -24,7 +24,11 @@ namespace BridgerPay.DumDumPay
 		}
 
 
-
+		/// <summary>
+		///  Payment creation processing
+		/// </summary>
+		/// <param name="request"></param>
+		/// <returns></returns>
 		public async Task<CreatePaymentResponse> CreatePaymentAsync(CreatePaymentRequest request)
 		{
 			CreatePaymentResponse result = null;
@@ -63,6 +67,11 @@ namespace BridgerPay.DumDumPay
 		}
 
 		
+		/// <summary>
+		///  Payment confirmation processing
+		/// </summary>
+		/// <param name="request"></param>
+		/// <returns></returns>
 		public async Task<ConfirmPaymentResponse> ConfirmPaymentAsync(
 			ConfirmPaymentRequest request) 
 		{ 

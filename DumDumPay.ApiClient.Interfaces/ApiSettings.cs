@@ -1,5 +1,8 @@
 ﻿namespace BridgerPay.DumDumPay.ApiClient.Interfaces
 {
+	/// <summary>
+	///  Api connection settings
+	/// </summary>
 	public class ApiSettings
 	{
 		public string MerchantId { get; set; }

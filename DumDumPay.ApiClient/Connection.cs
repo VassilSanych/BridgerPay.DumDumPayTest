@@ -8,11 +8,13 @@ using Microsoft.Extensions.Options;
 
 namespace BridgerPay.DumDumPay.ApiClient
 {
+	/// <summary>
+	///  Api connection methods
+	/// </summary>
 	public class Connection : IConnection
 	{
 		private readonly ILogger<Client> _logger;
 		private readonly ApiSettings _settings;
-
 		
 		public Connection(ILogger<Client> logger, IOptions<ApiSettings> settings)
 		{
